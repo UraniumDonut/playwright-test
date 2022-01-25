@@ -30,6 +30,7 @@ testing playwright with github actions
 #### Lokaler Webserver
 * Wenn gegen lokale Dateien getestet werden soll (nicht bestehende Website), so muss beim Testen ein Server aufgesetzt werden. 
 * Ich benutze dafür https://www.npmjs.com/package/http-server installierbar via ```npm install http-server``` 
+* Wichtig: Den Server in der testing directory installieren. Er ist nicht global.
 * Server wird wie folgt in ```playwright.config.ts``` eingebunden:
 
 		webServer: {
