@@ -23,8 +23,9 @@ testing playwright with github actions
 * Template für die Datei:
 	* https://playwright.dev/docs/ci
 * Nach ```node-version: 14``` kann 
-	 	 cache: 'npm'
-          cache-dependency-path: testing/package-lock.json
+
+		cache: 'npm'
+		cache-dependency-path: testing/package-lock.json
 	eingefügt werden um die npm packages zu cachen.
 
 #### Lokaler Webserver
